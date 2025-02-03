@@ -1,0 +1,37 @@
+.custom-get-Data:focus-visible{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.custom-get-Data::placeholder{
+    color: white;
+    font-size: 13px;
+    width: 90px; 
+    text-align: start;
+
+}
+.custom-btn {
+    border: 1px solid rgba(255, 255, 255, 0.257);
+    border-radius: 30px;
+}
+.custom-get-Data{
+    width: 100%;
+    border-bottom: 1px solid gray !important;
+}
+.custom-background{
+    background-color: rgba(0, 0, 0, 0.908);
+}
+@media (min-width: 0px) and (max-width: 525px) {
+    .custom-postion-sm{
+        position: relative !important;
+        left: -40px;
+    }
+    .custom-margin-sm{
+        margin-left: 30px;
+    }
+    .sm-overflow-width{
+        overflow: hidden;
+    }
+    .custom-get-Data{
+        width: 75%; 
+    }
+}

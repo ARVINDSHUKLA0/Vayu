@@ -1,0 +1,140 @@
+ 
+ .viedo-main-conatiner {
+    height: 100vh;
+    width: 100%;  
+    overflow: hidden;
+}
+
+.viedo-warpper {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+    filter: hue-rotate(180deg) brightness(0.6) contrast(.9);  
+}
+.viedo-warpper-color-change{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center;
+    filter: hue-rotate(180deg) brightness(0.1) contrast(.9); 
+}
+.viedo-warpper-color-noChange{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; 
+}
+.viedo-menu-list {
+    position: absolute;
+    width: 100%;
+    top: 20px;   
+    color: white;  
+    text-align: center;  
+}
+
+.viedo-wraper-heading{
+    position: absolute;
+    padding-left: 4px;
+    width: 100%;
+    text-align: center;
+    top: 60%;  
+    left: 50%; 
+    transform: translate(-50%,50%);
+}
+.video-warper-sub-heding{
+    position: absolute;
+    bottom: 10%;
+    left: 50%; 
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,50%);
+}
+
+.custom-margin-border{
+ margin-right: 140px;
+}
+.custom-margin-border-two{ 
+margin-right: 55%;
+margin-left: 0px;
+}
+.service-item{  
+border-bottom: 1px solid gray;
+padding: 3px 0px;
+}
+.custom-postion-viedo-warpper{
+transform: translate(0px,-50%);
+ padding-left: 30px;
+width: 50%;  
+}
+
+.viedo-menu-left-side {
+position: absolute;
+top: 50%;   
+color: white;  
+text-align: start;  
+}
+.viedo-menu-center{
+position: absolute;
+top: 50%;
+left:50%; 
+transform: translate(-50%,-50%);
+}
+.custom-rouned-border{
+height: 150px;
+width: 150px;
+border: 1px solid #7CD0E4;
+border-radius: 50%;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 0;  
+    height: 100%;
+}
+ 
+ .postion-height-set{
+    width: 100%; 
+    max-height: 900vh; 
+    position: sticky;
+ }
+ 
+ 
+@media (min-width: 0px) and (max-width: 525px) {
+.custom-padding{
+padding-bottom: 25px;
+}
+.custom-margin-border{
+margin-right: 90px;
+}
+.custom-padding-top{
+padding-top: 40px;
+}
+.custom-margin-border-two{ 
+margin-right: 50%;
+margin-left: 5px;
+}
+
+
+.custom-postion-viedo-warpper{
+  width: 100%; 
+  padding-left: 20px;
+}
+.custom-width-sm{
+width: 100%;
+ padding: 2px;
+
+}
+}
+
+@media (min-width: 526px) and (max-width: 1024px) {
+.custom-postion-viedo-warpper{
+    width: 100%;
+   }
+} 
+ 
+
+

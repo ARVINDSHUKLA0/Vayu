@@ -1,0 +1,59 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1,h2,h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 100 !important;
+}
+p{
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+h2{
+  font-size: 35px;
+}
+ h4{
+  font-size: 21px;
+ }
+
+.list-none{
+  list-style: none;
+}
+.text-decoration-none{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+.border-color{
+  color: #7CD0E4;
+}
+ 
+.infoColro{
+  color: #7CD0E4;
+}
+.min-bg-color{
+  background-color: #7CD0E4;
+}
+
+.f-size{
+  font-size: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 525px) {
+  .f-size{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  h4{
+    font-size: 19px;
+   }
+  
+}

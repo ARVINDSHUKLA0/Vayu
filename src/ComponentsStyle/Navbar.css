@@ -1,0 +1,48 @@
+.custom-logo-postion {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+} 
+ 
+.menu-item-bars{
+    position: absolute;
+    right: 20px; 
+    cursor: pointer;
+}
+ 
+.menu-item-warpper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.164);  
+    z-index: 98;
+}
+.menu-item { 
+    width: 24%;
+    right: -100%;  
+    background-color: white;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    text-align: start;
+    transition: right 0.3s ease-in-out;
+    padding: 10px;
+} 
+.menu-item.open {
+    right: 0;
+}
+@media (min-width: 0px) and (max-width: 525px) {
+  .menu-item{
+    width: 70%;
+  }
+}
+
+@media (min-width: 526px) and (max-width: 1023px) {
+    .menu-item{
+        width: 35%;
+      }
+}
