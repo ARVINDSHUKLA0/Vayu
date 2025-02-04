@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './App.css'
@@ -10,11 +10,9 @@ import "@fontsource/playfair-display";
 import "@fontsource/lato";  
 
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() { 
   return (
      <> 
       <BrowserRouter>
