@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="custom-logo-postion">
                     <Link className="text-decoration-none text-white" to="/">
                     <img src={Logo} width={290} alt="" />
-                    <h5 className="text-capitalize p-0">Vayu spa</h5>
+                    <h5 className="text-capitalize p-0">Demo</h5>
                     </Link>
                 </div>
                 <div className=" menu-item-bars">

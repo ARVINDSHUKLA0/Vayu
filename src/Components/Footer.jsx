@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className=" custom-background py-5">
+        <div className=" custom-background py-4">
             <div className="sm-overflow-width">
                 <div className='d-sm-flex d-block justify-content-between'>
                     <div className='text-sm-start text-md-center '>
                         <Link className='text-decoration-none' to="/">
                         <img className='custom-postion-sm' src={Logo} width={200} alt="Vayu Spa Logo" />
-                        <p className="text-white mt-2 text-capitalize custom-margin-sm">Vayu Spa</p>
+                        <p className="text-white mt-2 text-capitalize custom-margin-sm">demo</p>
                         </Link>
                     </div>
                     <div className="text-sm-start text-md-cente custom-margin-sm">
@@ -22,8 +22,8 @@ const Footer = () => {
                             type="email"
                             
                         />
-                        <div className="mt-3">
-                            <Link className=" custom-btn py-2 text-decoration-none fs-5 text-capitalize px-4 text-secondary">Submit</Link>
+                        <div className="my-3">
+                            <Link className="custom-btn-sumbit text-decoration-none fs-5 text-capitalize px-4 text-secondary">Submit</Link>
                         </div>
                     </div>
                     <div className='pe-lg-4 text-start custom-margin-sm'>

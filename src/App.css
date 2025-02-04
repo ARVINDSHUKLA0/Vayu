@@ -29,7 +29,9 @@ h2{
   font-weight: 500;
 }
 
-
+.custom-bg-info{
+  background-color: #7CD0E4;
+}
 .border-color{
   color: #7CD0E4;
 }
@@ -37,8 +39,8 @@ h2{
 .infoColro{
   color: #7CD0E4;
 }
-.min-bg-color{
-  background-color: #7CD0E4;
+.min-bg-color{ 
+  background-color: rgba(255, 255, 0, 0.113);
 }
 
 .f-size{

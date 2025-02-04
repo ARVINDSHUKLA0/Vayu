@@ -1,19 +1,17 @@
 import React, { useRef, useState } from 'react'
 import '../PagesStyle/Home.css'
-import ViedoOne from '/assets/viedo/viedo1.mp4'
+import ViedoOne from '/assets/viedo/viedo-One.mp4'
+import ViedoTwo from '/assets/viedo/viedo-two.mp4'
+import ViedoThree from '/assets/viedo/viedo-Three.mp4'
+import ViedoFour from '/assets/viedo/viedo-Four.mp4'
+import ViedoFive from '/assets/viedo/viedo-Five.mp4'
+import ViedoSix from '/assets/viedo/viedo-Six.mp4'
 import Navbar from '../Components/Navbar'
-import HotelOneImges from '/assets/img/imges1.jpeg'
-import ViedoTwo from '/assets/viedo/viedo-2.mp4'
-import ViedoThree from '/assets/viedo/viedo-3.mp4'
-import ViedoFour from '/assets/viedo/18531402-uhd_3840_2160_60fps.mp4'
-import ViedoFive from '/assets/viedo/10135156-uhd_3840_2160_30fps.mp4'
-import ViedoSix from '/assets/viedo/12684187_1920_1080_60fps.mp4'
-import ViedoSeven from '/assets/viedo/12225674-hd_1920_1080_25fps.mp4'
 import CradSlider from '../Components/CradSlider'
-import ViedoEight from '/assets/viedo/viedo-8.mp4'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
-
+import HotelOneImges from '/assets/img/imges1.jpeg'
+ 
 const Home = () => {
 
     const services = [
@@ -75,8 +73,8 @@ const Home = () => {
                 </div>
             </div>
             <div className='container'>
-                <div className="row">
-                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center ">
+                <div className="row ps-3">
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center  ">
                         <div>
                             <h2 className=' py-2 text-capitalize fs-size m-0'>the breath of <br />   family  wellness
                                 <hr className='custom-margin-border' />
@@ -104,15 +102,15 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='col-lg-5 offset-md-2 col-md-5 col-sm-5 col-12'>
-                        <div className="service-container">
+                        <div className="service-container ">
                             {services.slice(0, visibleCount).map((service, index) => (
                                 <div key={index} className="service-item">
                                     <div
-                                        className="d-flex justify-content-between align-items-center  service-title"
+                                        className="d-flex align-items-center service-title"
                                         onClick={() => handleToggle(index)}
                                     >
                                         <h4 className="text-capitalize">{service.title}</h4>
-                                        <i className={`fa-solid fa-arrow-right text-secondary ${contentSerives === index ? "rotate" : ""}`}></i>
+                                        <i className={`fa-solid fa-arrow-right text-secondary mouse-hover ps-3 ${contentSerives === index ? "rotate" : ""}`}></i>
                                     </div>
                                     {contentSerives === index && (
                                         <div className="service-content">{service.content}</div>
@@ -120,7 +118,7 @@ const Home = () => {
                                 </div>
                             ))}
                             <div className="text-start text-sm-center mt-md-5 custom-padding-top">
-                                <button className="btn bg-info" onClick={handleShowMore}>
+                                <button className=" custom-btn-serives custom-bg-info text-white" onClick={handleShowMore}>
                                     {visibleCount < services.length ? "View More Services" : "Show Less"}
                                 </button>
                             </div>
@@ -129,15 +127,17 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+
+
             <section className='postion-height-set'>
                 <div className=' sticky-container'>
                     <div className='viedo-main-conatiner '>
                         <video autoPlay muted loop playsInline className='w-100 viedo-warpper-color-change' src={ViedoTwo}></video>
                     </div>
                     <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
-                        <h2 className='text-capitalize mb-4'>a completely <br /> private experience</h2>
+                        <h2 className='text-capitalize mb-4'>Harvesting and Fermentation</h2>
                         <hr className='border-color custom-margin-border-two' />
-                        <p className='text-capitalize custom-margin-border custom-width-sm'>Discover the ultimate in relaxation at Vayu Spa, a completely private and clothing-optional spa sanctuary nestled in the heart of the city. Immerse yourself in a world of tranquility and rejuvenation, where every moment is designed for your complete comfort and rejuvenation</p>
+                        <p className='text-capitalize custom-margin-border custom-width-sm'>Under the tropical sun, ripe cacao pods are harvested, revealing their pulpy treasure.  The beans, nestled within, begin their transformation.  Piled in heaps, they ferment, a magical process where yeasts and bacteria awaken hidden flavors, turning simple sweetness into the complex symphony of chocolate.</p>
                     </div>
                 </div>
                 <div className='sticky-container'>
@@ -146,9 +146,9 @@ const Home = () => {
                     </div>
                     <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
                         <div className=''>
-                            <h2 className='text-capitalize mb-3 '>stay</h2>
+                            <h2 className='text-capitalize mb-3 '>Drying and Roasting</h2>
                             <hr className='border-color custom-margin-border-two' />
-                            <p className='text-capitalize custom-margin-border custom-width-sm'>Unwind and recharge with our luxurious spa services. Book your stay and discover a world of tranquility.</p>
+                            <p className='text-capitalize custom-margin-border custom-width-sm'>Sun-drenched beans, now freed from their pulpy embrace, are laid out to dry, their moisture gently coaxed away.  Then, the roaster's warmth awakens their full potential.  Aromatic notes unfurl as the beans crackle and deepen in color, transforming into the essence of chocolate, ready for the next stage of their delicious journey.</p>
                         </div>
                     </div>
                 </div>
@@ -158,21 +158,9 @@ const Home = () => {
                     </div>
                     <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
                         <div className=''>
-                            <h2 className='text-capitalize mb-4'>showers</h2>
+                            <h2 className='text-capitalize mb-4'>Winnowing and Grinding</h2>
                             <hr className='border-color custom-margin-border-two' />
-                            <p className='text-capitalize custom-margin-border custom-width-sm'>Experience the refreshing essence of 'Vayu' with invigorating rainfall showers.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='sticky-container'>
-                    <div className='viedo-main-conatiner '>
-                        <video autoPlay muted loop playsInline className='w-100 viedo-warpper-color-noChange' src={ViedoSeven}></video>
-                    </div>
-                    <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
-                        <div className=''>
-                            <h2 className='text-capitalize mb-4'>soak</h2>
-                            <hr className='border-color custom-margin-border-two' />
-                            <p className='text-capitalize custom-margin-border custom-width-sm'>Immerse yourself in the therapeutic benefits of our private cedar soaking tubs. Each tub is meticulously cleaned and refilled with fresh water between uses, ensuring a clean and refreshing experience for every guest.</p>
+                            <p className='text-capitalize custom-margin-border custom-width-sm'>The roasted beans, their shells now brittle, are cracked and winnowed, revealing the precious nibs within. These fragrant fragments are then ground, releasing their rich oils and transforming into a smooth, dark paste - the heart of chocolate, ready to be further refined</p>
                         </div>
                     </div>
                 </div>
@@ -182,21 +170,9 @@ const Home = () => {
                     </div>
                     <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
                         <div className=''>
-                            <h2 className='text-capitalize mb-4'>wellpod</h2>
+                            <h2 className='text-capitalize mb-4'>Molding and Cooling</h2>
                             <hr className='border-color custom-margin-border-two' />
-                            <p className='text-capitalize custom-margin-border custom-width-sm'>Discover the transformative power of Wellpod, a reinvented sauna experience. Enjoy gentle warmth at 50°C, surrounded by natural materials in an open and spacious environment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='sticky-container'>
-                    <div className='viedo-main-conatiner '>
-                        <video autoPlay muted loop playsInline className='w-100 viedo-warpper-color-change' src={ViedoTwo}></video>
-                    </div>
-                    <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
-                        <div className=''>
-                            <h2 className='text-capitalize mb-4'>cold water</h2>
-                            <hr className='border-color custom-margin-border-two' />
-                            <p className='text-capitalize custom-margin-border custom-width-sm'>Breathe Deeply. Plunge In. Experience the invigorating effects of our cold water pools</p>
+                            <p className='text-capitalize custom-margin-border custom-width-sm'>The tempered chocolate, smooth and glossy, is poured into waiting molds, taking on delightful shapes.  As it cools, it solidifies, a transformation from liquid silk to firm delight.  The final touch before unveiling the finished chocolate, ready to be savored.</p>
                         </div>
                     </div>
                 </div>
@@ -206,16 +182,19 @@ const Home = () => {
                     </div>
                     <div className='custom-postion-viedo-warpper viedo-menu-left-side '>
                         <div className=''>
-                            <h2 className='text-capitalize mb-4'>stone</h2>
+                            <h2 className='text-capitalize mb-4'>Packaging and Enjoying</h2>
                             <hr className='border-color custom-margin-border-two' />
-                            <p className='text-capitalize custom-margin-border custom-width-sm'>Experience the warmth of riverstones, gently heated to provide a soothing and comforting experience. Ideal for open-air reflexology and relaxing lounge areas</p>
+                            <p className='text-capitalize custom-margin-border custom-width-sm'>The finished chocolate, gleaming and irresistible, is carefully wrapped, preserving its delicate flavors.  From elegant boxes to playful wrappers, each package holds a promise of delight.  Finally, the moment arrives: the unwrapping, the aroma, the first bite - pure chocolate bliss.</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+
+
             <div className='min-bg-color py-4'>
                 <div className="row m-0">
-                    <div className="col-lg-5 col-md-5 col-sm-5 col-12 mt-4 ps-lg-5 ps-5">
+                    <div className="col-lg-5 col-md-5 col-sm-5 col-12 mt-4 ps-lg-5 ps-3">
                         <h2 className='text-capitalize'>the <br /> review</h2>
                         <hr className='custom-margin-border-two ' />
                     </div>
@@ -226,11 +205,11 @@ const Home = () => {
             </div>
             <div className='position-relative'>
                 <div className='viedo-main-conatiner '>
-                    <video muted ref={viedoRef} className='w-100 viedo-warpper-color-noChange' src={ViedoEight}></video>
+                    <video muted ref={viedoRef} className='w-100 viedo-warpper-color-noChange' src={ViedoFour}></video>
                 </div>
                 <div className=' viedo-menu-center '>
                     <Link onClick={viedoPlay} className='text-decoration-none '>
-                        <h2 className='infoColro text-capitalize text-center custom-rouned-border '>book <br /> now</h2>
+                        <h2 className='infoColro text-capitalize text-center custom-rouned-border '>play <br /> now</h2>
                     </Link>
                 </div>
             </div>
