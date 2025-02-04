@@ -73,11 +73,11 @@ const Home = () => {
                 </div>
             </div>
             <div className='container'>
-                <div className="row ps-3">
+                <div className="row custom-padding">
                     <div className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex align-items-center  ">
                         <div>
-                            <h2 className=' py-2 text-capitalize fs-size m-0'>the breath of <br />   family  wellness
-                                <hr className='custom-margin-border' />
+                            <h2 className=' py-2 text-capitalize fs-size m-0 ps-1'>the breath of <br />   family  wellness
+                                <hr className='custom-margin-border ms-1' />
                             </h2>
 
                         </div>
@@ -113,7 +113,9 @@ const Home = () => {
                                         <i className={`fa-solid fa-arrow-right text-secondary mouse-hover ps-3 ${contentSerives === index ? "rotate" : ""}`}></i>
                                     </div>
                                     {contentSerives === index && (
-                                        <div className="service-content">{service.content}</div>
+                                        <div className="service-content">
+                                            <p>{service.content}</p>
+                                        </div>
                                     )}
                                 </div>
                             ))}

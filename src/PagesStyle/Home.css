@@ -110,6 +110,9 @@ justify-content: center;
     display: inline-block;
     animation: moveIcon  1s linear ;
  }
+ .custom-padding{ 
+    padding-left: 6px;
+ }
   
  @keyframes moveIcon {
     0%{
@@ -129,6 +132,7 @@ padding-bottom: 25px;
 }
 .custom-margin-border{
 margin-right: 90px;
+
 }
 .custom-padding-top{
 padding-top: 40px;
